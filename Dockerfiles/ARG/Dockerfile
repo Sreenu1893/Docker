@@ -1,5 +1,5 @@
-ARG version:-9
-FROM almalinux:${version}
+ARG version
+FROM almalinux:${version:-9}
 ARG course="Devops"\
       time="120 hrs"\
       learner="Sreenivas" 
