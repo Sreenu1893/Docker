@@ -1,0 +1,29 @@
+networks:
+  expense: {}
+volumes:
+  mysql:
+services:
+  backend:
+    image: node:1.0.0
+    networks:
+    -expense
+    container_name:backend
+    command: sh -c "sleep 10 && node /opt/backend/index.js"
+    depends_on:
+    -mysql
+  mysql:
+    image: mysql:1.0.0
+    networks:
+    -expense
+    container_name: mysql
+    volumes:
+    -mysql:/var/lib/mysql
+  frontend:
+  image: nginx:1.0.0
+  networks:
+  -expense
+  container_name: frontend 
+  ports:
+  -80:80
+  depends_on:
+  -backend
