@@ -7,7 +7,7 @@ services:
     image: node:1.0.0
     networks:
     -expense:
-    container_name:backend
+    container_name: backend
     command: sh -c "sleep 10 && node /opt/backend/index.js"
     depends_on:
     -mysql
