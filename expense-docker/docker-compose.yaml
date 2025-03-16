@@ -17,13 +17,13 @@ services:
     -expense:
     container_name: mysql
     volumes:
-    -mysql:/var/lib/mysql
+    -mysql:/var/lib/mysql:
   frontend:
   image: nginx:1.0.0
   networks:
-  -expense
+  -expense:
   container_name: frontend 
   ports:
-  -80:80
+  -80:80:
   depends_on:
-  -backend
+  -backend:
