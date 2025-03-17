@@ -3,7 +3,6 @@ WORKDIR /opt/backend
 COPY package.json .
 RUN addgroup -S expense
 RUN adduser -S expese -G expense
-RUN mkdir /opt/backend
 RUN chown -R expense:expense /opt/backend
 EXPOSE 8080
 COPY *.js .
