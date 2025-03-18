@@ -5,4 +5,4 @@ metadata:
   namespace: expense
 spec:
   containers:
-  -name: frontend
+  - name: frontend
