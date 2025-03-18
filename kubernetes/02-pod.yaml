@@ -3,6 +3,6 @@ kind: Pod
 metadata:
   name: frontend
   namespace: expense
-spec:
+Spec:
   containers:
   -name: frontend
