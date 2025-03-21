@@ -7,8 +7,8 @@ spec:
   containers:
   - name: frontend-env
     image: nginx
-  env:
-  - name: course
-    value: Devops
-  - name: duration
-    value: 120 hrs 
+   env:
+   - name: course
+     value: Devops
+   - name: duration
+     value: 120 hrs 
