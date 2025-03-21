@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: frontend-service
+  name: frontend-service-nodeport
   namespace: expense
 spec:
   type: NodePort
