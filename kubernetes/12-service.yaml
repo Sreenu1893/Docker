@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: frontend-service
-  namespace: expense
+  #namespace: expense
 spec:
   type: NodePort
   selector:
@@ -13,3 +13,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
+      nodePort:30002
