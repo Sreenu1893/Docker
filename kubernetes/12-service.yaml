@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: frontend-service
+  namespace: expense
 spec:
   selector:
     project: expense
