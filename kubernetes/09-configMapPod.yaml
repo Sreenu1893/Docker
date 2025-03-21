@@ -8,5 +8,5 @@ spec:
   - name: frontend-config
     image: nginx
     envFrom:
-    - ConfigMapRef:
-        name: config
+      - ConfigMapRef:
+           name: config
