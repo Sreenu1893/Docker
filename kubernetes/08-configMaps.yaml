@@ -3,7 +3,8 @@ kind: ConfigMap
 
 metadata:
   name: config
+  namespace: expense
 data:
   course: Devops
   duration: 120hrs
-  
+
