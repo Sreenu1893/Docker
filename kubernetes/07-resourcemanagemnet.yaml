@@ -7,7 +7,7 @@ spec:
   containers:
   - name: frontend-rm
     image: nginx
-  resorces: 
+  resources: 
     requests: 
       cpu: "100m"
       memory: "68 Mi"
