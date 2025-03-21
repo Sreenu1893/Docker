@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: frontend-service
+  #namespace: expense
+spec:
+  type: LoadBalancer
+  selector:
+    project: expense
+    environment: dev
+    component: frontend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
