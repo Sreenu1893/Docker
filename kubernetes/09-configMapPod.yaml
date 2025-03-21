@@ -7,6 +7,6 @@ spec:
   containers:
   - name: frontend-config
     image: nginx
-    envfrom:
+    envFrom:
     - ConfigMapRef:
       name: config
