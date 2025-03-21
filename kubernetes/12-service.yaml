@@ -4,6 +4,7 @@ metadata:
   name: frontend-service
   namespace: expense
 spec:
+  type: NodePort
   selector:
     project: expense
     environment: dev
